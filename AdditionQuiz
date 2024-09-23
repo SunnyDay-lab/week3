@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class AdditionQuiz {
+    public static void main(String[] args){
+        int nummber1 =(int)(System.currentTimeMillis()%10);// generate number1
+        int nummber2 =(int)(System.currentTimeMillis()%10%10);// generate number2
+
+        // Create a Scanner
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("What is "+nummber1+" + "+nummber2+" ? ");// show question
+
+        int answer = input.nextInt();// receive answer
+
+        System.out.println(nummber1+" + "+nummber2+" = "+answer + " is "+(nummber1+nummber2 ==answer));//display result
+    }
+
+}
