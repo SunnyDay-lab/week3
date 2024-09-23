@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class example_2_4 {
+    public static void main(String[] args)
+    {
+        double miles = 100;
+        final double KILOMETERS_PER_MILES = 1.609;
+
+        //Compute kilometers
+        double kilometers = miles * KILOMETERS_PER_MILES;
+
+        // Display the result
+        System.out.println("The are "+ kilometers +"kilometers in "+ miles +" miles.");
+    }
+}
