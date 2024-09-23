@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Day {
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the day of today: ");
+
+        int day = input.nextInt();
+
+        //after 100 daus
+        day = day + 100;
+
+        day = day % 7;
+
+        if(day == 0){
+            day = 7;
+        }
+
+        System.out.println("Todya is "+day);
+    }
+}
